@@ -14,7 +14,7 @@ const chips = [
   // Browser & APIs
   'Playwright', 'Selenium', 'FastAPI', 'Streamlit',
   // Infra & MLOps
-  'Docker', 'docker-compose', 'CI/CD', 'GitHub Actions', 'Redis', 'MongoDB', 'SQL',
+  'Docker', 'docker-compose', 'CI/CD', 'GitLab', 'Redis', 'MongoDB', 'SQL',
   // Cloud
   'GCP · Vertex AI', 'Azure', 'AWS Bedrock',
   // Code
@@ -76,7 +76,7 @@ export default function About() {
                 My core expertise is <span style={{ color: '#e6edf3' }}>LangGraph agent orchestration</span>, <span style={{ color: '#e6edf3' }}>MCP chatbot development</span> (Claude MCP + MongoDB MCP), and <span style={{ color: '#e6edf3' }}>hybrid RAG pipelines</span> — Pinecone, Neo4j graph expansion, cross-encoder reranking. I've shipped autonomous browser agents, multi-turn conversational agents, and LoRA fine-tuned SLMs on cloud GPU.
               </p>
               <p>
-                I work across the full AI stack: <span style={{ color: '#e6edf3' }}>LLM APIs</span> (GPT-4, Claude, Gemini, Amazon Bedrock, Azure AI Foundry, Vertex AI), <span style={{ color: '#e6edf3' }}>RAG & vector databases</span> (Pinecone, Qdrant, FAISS, Neo4j), <span style={{ color: '#e6edf3' }}>SLM fine-tuning</span> (LoRA/QLoRA, GGUF, llama.cpp), and <span style={{ color: '#e6edf3' }}>production infra</span> (Docker, CI/CD, FastAPI, Redis, GitHub Actions).
+                I work across the full AI stack: <span style={{ color: '#e6edf3' }}>LLM APIs</span> (GPT-4, Claude, Gemini, Amazon Bedrock, Azure AI Foundry, Vertex AI), <span style={{ color: '#e6edf3' }}>RAG & vector databases</span> (Pinecone, Qdrant, FAISS, Neo4j), <span style={{ color: '#e6edf3' }}>SLM fine-tuning</span> (LoRA/QLoRA, GGUF, llama.cpp), and <span style={{ color: '#e6edf3' }}>production infra</span> (Docker, CI/CD, FastAPI, Redis, GitLab).
               </p>
               <p>
                 Every system I build ships end to end — from architecture to deployment.
