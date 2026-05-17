@@ -32,7 +32,7 @@ export default function Nav() {
       </span>
 
       {/* Desktop links */}
-      <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }} className="hidden md:flex">
+      <div className="nav-desktop-links" style={{ gap: '2rem', alignItems: 'center' }}>
         {links.map(l => (
           <Link
             key={l}
@@ -57,8 +57,8 @@ export default function Nav() {
       {/* Mobile menu button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        style={{ background: 'none', border: 'none', color: 'var(--accent)', fontSize: '1.4rem' }}
-        className="md:hidden"
+        className="nav-mobile-toggle"
+        style={{ background: 'none', border: 'none', color: 'var(--accent)', fontSize: '1.6rem', padding: '0.5rem' }}
         aria-label="menu"
       >
         {menuOpen ? '✕' : '☰'}

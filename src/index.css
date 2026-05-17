@@ -159,6 +159,18 @@ section { position: relative; z-index: 1; }
    Mobile responsive overrides
    ───────────────────────────────────────────── */
 
+/* Nav — desktop links vs mobile hamburger */
+.nav-desktop-links {
+  display: flex;
+}
+.nav-mobile-toggle {
+  display: none;
+}
+@media (max-width: 900px) {
+  .nav-desktop-links { display: none !important; }
+  .nav-mobile-toggle { display: block !important; }
+}
+
 /* Card grids — force single column on small screens */
 .responsive-grid {
   display: grid;
