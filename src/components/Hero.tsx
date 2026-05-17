@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             className="section-label" style={{ marginBottom: '1.5rem' }}
           >
-            Agentic AI Engineer · SDE · Bangalore, India
+            AI Engineer · Agentic AI Engineer · SDE · Bangalore, India
           </motion.p>
 
           <motion.h1

@@ -3,19 +3,19 @@ import { motion } from 'framer-motion'
 const groups = [
   {
     label: 'AI / LLM',
-    skills: ['LangGraph', 'Claude MCP', 'MongoDB MCP', 'NVIDIA NIM', 'Groq', 'GPT-4', 'Gemini', 'Amazon Bedrock', 'Azure OpenAI', 'Agentic Workflows', 'Function Calling', 'Prompt Engineering'],
+    skills: ['LangGraph', 'Claude MCP', 'MongoDB MCP', 'Embedding Models', 'GPT-4', 'Gemini', 'Amazon Bedrock', 'Azure OpenAI', 'Agentic Workflows', 'Function Calling', 'Prompt Engineering', 'Model Finetuning'],
   },
   {
     label: 'ML / NLP',
-    skills: ['RAG Pipelines', 'FAISS', 'Qdrant', 'Pinecone', 'Neo4j Graph DB', 'HuggingFace', 'LoRA / QLoRA', 'PEFT', 'llama.cpp', 'GGUF', 'DeBERTa', 'SciSpacy', 'BAAI/bge'],
+    skills: ['RAG Pipelines', 'FAISS', 'Qdrant', 'Pinecone', 'Neo4j Graph DB', 'HuggingFace', 'LoRA / QLoRA', 'PEFT', 'llama.cpp', 'GGUF', 'DeBERTa', 'SciSpacy', 'BAAI/bge', 'Dense Vector', 'Hybrid Query Model', 'BM25', 'Semantic Models'],
   },
   {
     label: 'Cloud & MLOps',
-    skills: ['GCP / Vertex AI', 'Azure', 'AWS Bedrock', 'Docker', 'FastAPI', 'Redis', 'Upstash', 'MongoDB Atlas', 'Weights & Biases', 'CI/CD', 'GitHub Actions', 'Render', 'HF Spaces'],
+    skills: ['GCP / Vertex AI', 'Azure', 'AWS Bedrock', 'Docker', 'FastAPI', 'Redis', 'Upstash', 'MongoDB Atlas', 'Weights & Biases', 'CI/CD', 'GitLab', 'Render', 'HF Spaces'],
   },
   {
     label: 'Programming & Data',
-    skills: ['Python', 'TypeScript', 'SQL', 'Playwright', 'Selenium', 'MongoDB', 'ReactJS', 'Streamlit', 'Power BI', 'Pydantic', 'structlog'],
+    skills: ['Python', 'TypeScript', 'SQL', 'Playwright', 'Selenium', 'MongoDB', 'ReactJS', 'Knowledge Graph', 'Power BI', 'Pydantic', 'structlog', 'Vector DB'],
   },
 ]
 
