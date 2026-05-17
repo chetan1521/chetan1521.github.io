@@ -33,9 +33,9 @@ const prodWork = [
     stack: ['Claude MCP', 'MongoDB MCP', 'FastAPI', 'Redis'],
   },
   {
-    title: 'FAISS Semantic Skill Matcher',
-    desc: 'High-throughput semantic matching engine over 1M+ skill pairs at 50K records/sec using GPU-accelerated embeddings and FAISS ANN indexing. Reduced matching time from days to minutes.',
-    stack: ['FAISS', 'HuggingFace', 'PyTorch', 'FastAPI'],
+    title: 'Biomedical Concept Search Engine',
+    desc: 'High-throughput semantic search over 1M+ biomedical entities (UMLS/SNOMED/MeSH) at 50K records/sec using GPU-accelerated BAAI/bge embeddings and FAISS ANN indexing. Sub-100ms query latency via FastAPI.',
+    stack: ['FAISS', 'BAAI/bge', 'PyTorch', 'FastAPI'],
   },
   {
     title: 'RAG System — 10M+ Documents',
@@ -46,11 +46,6 @@ const prodWork = [
     title: 'SLM Fine-tuning Pipeline',
     desc: 'End-to-end LoRA/PEFT fine-tuning for Llama-3.2, Qwen2.5, and Gemma-2 on domain-specific datasets. GGUF quantization and FastAPI deployment on Vertex AI GPU clusters.',
     stack: ['LoRA/PEFT', 'Vertex AI GPU', 'llama.cpp', 'Docker'],
-  },
-  {
-    title: 'AI Workforce Transformation',
-    desc: 'Multi-agent AI pipelines analyzing 220K+ employee workforce and 7,000+ roles using GPT-4 + Claude. Automated NLP taxonomy curation — ~70% reduction in manual effort.',
-    stack: ['GPT-4', 'Claude', 'Vertex AI', 'Power BI'],
   },
 ]
 
