@@ -1,10 +1,21 @@
 import { motion } from 'framer-motion'
 
 const chips = [
-  'LangGraph', 'Claude MCP', 'MongoDB MCP', 'NVIDIA NIM', 'Groq',
-  'RAG Pipelines', 'Qdrant', 'Neo4j', 'FAISS', 'Pinecone',
-  'LoRA Fine-tuning', 'QLoRA', 'llama.cpp', 'GGUF',
-  'Playwright', 'FastAPI', 'Docker', 'Vertex AI', 'GCP', 'AWS',
+  // Orchestration
+  'LangGraph', 'LangChain', 'Claude MCP', 'MongoDB MCP', 'Agentic Workflows',
+  // LLMs
+  'NVIDIA NIM', 'Groq', 'GPT-4', 'Claude (Anthropic)', 'Gemini', 'Azure OpenAI', 'Amazon Bedrock',
+  // RAG & Vector
+  'RAG Pipelines', 'Hybrid Retrieval', 'Qdrant', 'Pinecone', 'FAISS', 'Neo4j', 'BM25',
+  'BAAI/bge', 'Cross-Encoder Reranking', 'IBM Docling',
+  // Fine-tuning
+  'LoRA / QLoRA', 'PEFT', 'HuggingFace', 'llama.cpp', 'GGUF', 'Vertex AI GPU',
+  // Browser & Infra
+  'Playwright', 'FastAPI', 'Docker', 'Redis', 'MongoDB Atlas',
+  // Cloud
+  'GCP · Vertex AI', 'Azure', 'AWS Bedrock',
+  // Code
+  'Python', 'TypeScript', 'SQL', 'Streamlit',
 ]
 
 export default function About() {
@@ -14,7 +25,7 @@ export default function About() {
 
         {/* Left: Bio */}
         <motion.div
-          style={{ flex: '1 1 400px' }}
+          style={{ flex: '1 1 420px' }}
           initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}
         >
@@ -25,23 +36,23 @@ export default function About() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.85rem', lineHeight: 1.85, color: 'var(--text)' }}>
             <p>
-              I'm an <span className="accent">Agentic AI Engineer</span> who builds AI systems that reason, act, and ship to production — not just demos that look good in a notebook.
+              I'm an <span className="accent">Agentic AI Engineer and SDE</span> with 2+ years building production LLM systems — not prototypes, not demos. Systems that process millions of records, answer queries in under 2 seconds, and run without human intervention.
             </p>
             <p>
-              My work sits at the intersection of <span style={{ color: '#e6edf3' }}>LLM orchestration</span>, <span style={{ color: '#e6edf3' }}>autonomous agents</span>, and <span style={{ color: '#e6edf3' }}>RAG systems</span>. I use LangGraph to model complex multi-step agent loops as typed stateful graphs — every node, edge, and conditional branch intentional.
+              My core expertise is <span style={{ color: '#e6edf3' }}>LangGraph-based agent orchestration</span> — modelling complex multi-step reasoning as typed stateful graphs with conditional routing, tool use, and Redis checkpointing. I've built autonomous browser agents, hybrid RAG pipelines over 10M+ documents, and LoRA fine-tuning pipelines on cloud GPU clusters.
             </p>
             <p>
-              Currently building <span className="accent">MedMind</span> — a 4-project open-source ecosystem for medical research intelligence using NVIDIA NIM, Groq, Qdrant, Neo4j, and free GPU compute (Colab + Kaggle). 100% free stack, 100% real.
+              I work across the full AI stack: <span style={{ color: '#e6edf3' }}>LLM APIs</span> (NVIDIA NIM, Groq, Claude, GPT-4), <span style={{ color: '#e6edf3' }}>vector & graph databases</span> (Qdrant, Pinecone, Neo4j), <span style={{ color: '#e6edf3' }}>SLM fine-tuning</span> (LoRA/QLoRA, llama.cpp, GGUF), and <span style={{ color: '#e6edf3' }}>production infra</span> (FastAPI, Docker, GCP Vertex AI, Azure).
             </p>
             <p>
-              I care deeply about systems that are <span style={{ color: '#e6edf3' }}>actually buildable</span> — not just architecturally impressive on paper.
+              Every system I build ships end to end — from architecture to deployment.
             </p>
           </div>
         </motion.div>
 
         {/* Right: Tech chips */}
         <motion.div
-          style={{ flex: '1 1 300px' }}
+          style={{ flex: '1 1 320px' }}
           initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}
         >
@@ -51,10 +62,10 @@ export default function About() {
               <motion.span
                 key={chip}
                 className="tag"
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.85 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.03 }}
+                transition={{ delay: i * 0.025 }}
               >
                 {chip}
               </motion.span>

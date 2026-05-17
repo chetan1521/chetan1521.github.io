@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
 
 const stats = [
-  { value: '10M+', label: 'Docs in RAG' },
-  { value: '500K+', label: 'Records Processed' },
-  { value: '4', label: 'AI Systems Built' },
-  { value: '100%', label: 'Free Stack' },
+  { value: '2+', label: 'Years Production AI' },
+  { value: '1M+', label: 'Records / Run' },
+  { value: '50K/s', label: 'Throughput' },
+  { value: '<2s', label: 'RAG Latency' },
 ]
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             className="section-label" style={{ marginBottom: '1.5rem' }}
           >
-            Agentic AI Engineer · Bangalore, India
+            Agentic AI Engineer · SDE · Bangalore, India
           </motion.p>
 
           <motion.h1
@@ -48,17 +48,18 @@ export default function Hero() {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-            style={{ fontSize: '1.15rem', color: '#e6edf3', fontFamily: 'Syne, sans-serif', fontWeight: 600, marginBottom: '1rem' }}
+            style={{ fontSize: '1.1rem', color: '#e6edf3', fontFamily: 'Syne, sans-serif', fontWeight: 600, marginBottom: '0.8rem', lineHeight: 1.4 }}
           >
-            Building AI that acts, not just answers.
+            I build autonomous AI agents that ship to production —<br />
+            <span className="accent">LangGraph · LLM Orchestration · RAG · SLM Fine-tuning</span>
           </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-            style={{ fontSize: '0.85rem', color: 'var(--text-dim)', lineHeight: 1.8, maxWidth: '500px', marginBottom: '2.5rem' }}
+            style={{ fontSize: '0.82rem', color: 'var(--text-dim)', lineHeight: 1.9, maxWidth: '520px', marginBottom: '2.5rem' }}
           >
-            LangGraph · NVIDIA NIM · RAG · LoRA Fine-tuning · Playwright · Groq
-            <br />Building the MedMind open-source medical AI research ecosystem.
+            2+ years engineering production LLM systems — from autonomous browser agents and hybrid RAG pipelines
+            to LoRA fine-tuned SLMs deployed on cloud GPU. Every project ships end to end.
           </motion.p>
 
           <motion.div
@@ -77,14 +78,14 @@ export default function Hero() {
         {/* Right: Stats */}
         <motion.div
           initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}
-          style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', flex: '0 0 auto' }}
+          style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', flex: '0 0 auto' }}
         >
           {stats.map((s, i) => (
             <motion.div
               key={s.label}
               initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 + i * 0.1 }}
               className="card"
-              style={{ padding: '1.2rem 2rem', textAlign: 'right', minWidth: '180px' }}
+              style={{ padding: '1.2rem 2rem', textAlign: 'right', minWidth: '190px' }}
             >
               <div className="accent glow" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '2rem', lineHeight: 1 }}>{s.value}</div>
               <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', letterSpacing: '0.08em', marginTop: '4px' }}>{s.label}</div>
