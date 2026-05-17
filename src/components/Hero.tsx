@@ -20,7 +20,7 @@ export default function Hero() {
         paddingTop: '64px',
       }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', display: 'flex', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
+      <div className="mobile-stack-gap" style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', display: 'flex', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
 
         {/* Left: Text */}
         <div style={{ flex: '1 1 500px' }}>
@@ -84,7 +84,7 @@ export default function Hero() {
             <motion.div
               key={s.label}
               initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 + i * 0.1 }}
-              className="card"
+              className="card hero-stat-card"
               style={{ padding: '1.2rem 2rem', textAlign: 'right', minWidth: '190px' }}
             >
               <div className="accent glow" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '2rem', lineHeight: 1 }}>{s.value}</div>

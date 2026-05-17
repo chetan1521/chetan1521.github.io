@@ -154,3 +154,106 @@ section { position: relative; z-index: 1; }
   color: #e6edf3;
   line-height: 1.1;
 }
+
+/* ─────────────────────────────────────────────
+   Mobile responsive overrides
+   ───────────────────────────────────────────── */
+
+/* Card grids — force single column on small screens */
+.responsive-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+.responsive-grid.cols-projects {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+}
+.responsive-grid.cols-work {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.responsive-grid.cols-skills {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tablet & below */
+@media (max-width: 900px) {
+  section[id] {
+    padding: 5rem 5% !important;
+  }
+  section[id="hero"] {
+    padding: 0 5% !important;
+    padding-top: 80px !important;
+    min-height: auto !important;
+    padding-bottom: 4rem !important;
+  }
+  .responsive-grid.cols-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  section[id] {
+    padding: 3.5rem 1.25rem !important;
+  }
+  section[id="hero"] {
+    padding: 0 1.25rem !important;
+    padding-top: 90px !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Tighten section title */
+  .section-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  /* Card grids → single column */
+  .responsive-grid.cols-work,
+  .responsive-grid.cols-skills {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Cards a bit tighter */
+  .card {
+    padding: 1.25rem !important;
+  }
+
+  /* Buttons full-width-ish */
+  .btn-primary, .btn-outline {
+    padding: 10px 20px;
+    font-size: 0.72rem;
+  }
+
+  /* Hero stats — left-align + full width when wrapped below */
+  .hero-stat-card {
+    text-align: left !important;
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  /* Reduce big flex gaps */
+  .mobile-stack-gap {
+    gap: 2.5rem !important;
+  }
+  .mobile-stack-mb {
+    margin-bottom: 3rem !important;
+  }
+
+  /* Timeline tighter */
+  .timeline-wrap {
+    padding-left: 1.5rem !important;
+  }
+
+  /* Nav menu logo smaller */
+  .nav-logo {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Custom cursor — hide on touch devices */
+@media (pointer: coarse) {
+  * { cursor: auto !important; }
+  #cursor, #cursor-ring { display: none !important; }
+}

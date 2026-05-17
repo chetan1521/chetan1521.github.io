@@ -27,7 +27,7 @@ export default function Nav() {
       }}
     >
       {/* Logo */}
-      <span style={{ fontFamily: 'Space Mono', fontWeight: 700, fontSize: '1rem', color: '#e6edf3', letterSpacing: '0.05em' }}>
+      <span className="nav-logo" style={{ fontFamily: 'Space Mono', fontWeight: 700, fontSize: '1rem', color: '#e6edf3', letterSpacing: '0.05em' }}>
         // <span className="accent">CHETAN.C</span>
       </span>
 

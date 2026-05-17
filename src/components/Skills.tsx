@@ -34,7 +34,7 @@ export default function Skills() {
           </h2>
         </motion.div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
+        <div className="responsive-grid cols-skills">
           {groups.map((g, gi) => (
             <motion.div
               key={g.label}

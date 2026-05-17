@@ -11,7 +11,7 @@ const cards = [
 export default function Contact() {
   return (
     <section id="contact" style={{ padding: '8rem 5%' }}>
-      <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', gap: '5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+      <div className="mobile-stack-gap" style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', gap: '5rem', flexWrap: 'wrap', alignItems: 'center' }}>
 
         {/* Left */}
         <motion.div

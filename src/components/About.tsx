@@ -55,7 +55,7 @@ export default function About() {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
         {/* Top: Bio + chips */}
-        <div style={{ display: 'flex', gap: '5rem', flexWrap: 'wrap', alignItems: 'flex-start', marginBottom: '6rem' }}>
+        <div className="mobile-stack-gap mobile-stack-mb" style={{ display: 'flex', gap: '5rem', flexWrap: 'wrap', alignItems: 'flex-start', marginBottom: '6rem' }}>
 
           {/* Bio */}
           <motion.div
@@ -121,7 +121,7 @@ export default function About() {
             Production systems built and deployed at scale — overview of key projects from professional work.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.2rem' }}>
+          <div className="responsive-grid cols-work">
             {prodWork.map((w, i) => (
               <motion.div
                 key={w.title}

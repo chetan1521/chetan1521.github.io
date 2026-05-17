@@ -50,7 +50,7 @@ export default function Experience() {
         </motion.div>
 
         {/* Timeline */}
-        <div style={{ position: 'relative', paddingLeft: '2rem' }}>
+        <div className="timeline-wrap" style={{ position: 'relative', paddingLeft: '2rem' }}>
           {/* Vertical line */}
           <div style={{
             position: 'absolute', left: '5px', top: 0, bottom: 0,

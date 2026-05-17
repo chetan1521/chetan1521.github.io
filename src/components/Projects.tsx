@@ -54,7 +54,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '1.5rem' }}>
+        <div className="responsive-grid cols-projects">
           {projects.map((p, i) => (
             <motion.div
               key={p.num}
