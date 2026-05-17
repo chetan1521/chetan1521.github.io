@@ -4,7 +4,7 @@ const roles = [
   {
     period: 'Jan 2025 – Present',
     title: 'Software Development Engineer',
-    company: 'AI Company, Bangalore',
+    company: 'Spire.AI, Bangalore',
     bullets: [
       'Built LangGraph-based autonomous browser AI agent — zero human intervention, millions of records crawled per run',
       'Designed MCP agentic chatbots (Claude MCP + MongoDB MCP) — ~60% latency reduction vs traditional middleware stacks',
@@ -16,7 +16,7 @@ const roles = [
   {
     period: 'May 2024 – Dec 2024',
     title: 'AI Analyst — Product Quality & Metrics',
-    company: 'AI Company, Bangalore',
+    company: 'Spire.AI, Bangalore',
     bullets: [
       'Built multi-agent AI Foundry pipelines on Vertex AI — ~70% reduction in manual taxonomy curation',
       'Fine-tuned NLP models (T5, DeBERTa, SciSpacy) — deployed to production HuggingFace endpoints',
@@ -26,7 +26,7 @@ const roles = [
   {
     period: 'Jan 2024 – May 2024',
     title: 'Independent Consultant — AI & Data',
-    company: 'Freelance',
+    company: 'Spire.AI, Bangalore',
     bullets: [
       'Built LLM skill gap pipelines with async ETL — 500K+ records to MongoDB',
       'Developed forecasting models (LSTM, SARIMA, Prophet, Chronos) feeding Power BI dashboards',

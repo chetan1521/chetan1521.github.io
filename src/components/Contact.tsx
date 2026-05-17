@@ -25,7 +25,7 @@ export default function Contact() {
           </h2>
           <p style={{ fontSize: '0.82rem', color: 'var(--text-dim)', lineHeight: 1.9 }}>
             Open to Agentic AI · LLM Engineer · AI Systems roles.<br />
-            Remote ✓ · Based in Bangalore, India
+            Remote · Hybrid · In-Office
           </p>
         </motion.div>
 
