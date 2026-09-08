@@ -2,23 +2,21 @@ import { motion } from 'framer-motion'
 
 const chips = [
   // Orchestration & Agents
-  'LangGraph', 'LangChain', 'Claude MCP', 'MongoDB MCP', 'Agentic Workflows', 'Function Calling',
+  'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Multi-Agent Systems', 'Agentic Workflows', 'Function Calling', 'Tool Orchestration',
+  // Chatbots & NLP
+  'Conversational AI', 'Multi-turn Chatbots', 'NLU', 'Dialogue Management', 'Intent Routing', 'Entity Extraction',
   // LLMs & APIs
-  'GPT-4', 'Claude (Anthropic)', 'Gemini', 'Amazon Bedrock', 'Azure AI Foundry', 'Vertex AI',
-  // Chatbots
-  'MCP Chatbots', 'Conversational AI', 'Multi-turn Agents', 'RAG Chatbots',
+  'GPT-4', 'Claude (Anthropic)', 'Gemini', 'LLaMA', 'Amazon Bedrock', 'Vertex AI',
   // RAG & Vector
-  'RAG Pipelines', 'Hybrid Retrieval', 'Pinecone', 'Qdrant', 'FAISS', 'Neo4j', 'BM25', 'BAAI/bge', 'Cross-Encoder Reranking',
+  'RAG Pipelines', 'Hybrid Retrieval', 'Semantic Chunking', 'Pinecone', 'FAISS', 'Neo4j', 'BM25', 'Cross-Encoder Reranking', 'IBM Docling',
   // Fine-tuning
   'LoRA / QLoRA', 'PEFT', 'HuggingFace', 'llama.cpp', 'GGUF',
-  // Browser & APIs
-  'Playwright', 'Selenium', 'FastAPI', 'Streamlit',
   // Infra & MLOps
-  'Docker', 'docker-compose', 'CI/CD', 'GitLab', 'Redis', 'MongoDB', 'SQL',
+  'FastAPI', 'Docker', 'Redis', 'CI/CD (GitHub Actions)', 'Observability', 'Playwright', 'Streamlit',
   // Cloud
-  'GCP · Vertex AI', 'Azure', 'AWS Bedrock',
+  'GCP · Vertex AI', 'AWS · Bedrock',
   // Code
-  'Python', 'TypeScript', 'Power BI',
+  'Python', 'TypeScript', 'Node.js', 'SQL', 'Power BI',
 ]
 
 const prodWork = [
@@ -33,9 +31,14 @@ const prodWork = [
     stack: ['Claude MCP', 'MongoDB MCP', 'FastAPI', 'Redis'],
   },
   {
-    title: 'Biomedical Concept Search Engine',
-    desc: 'High-throughput semantic search over 1M+ biomedical entities (UMLS/SNOMED/MeSH) at 50K records/sec using GPU-accelerated BAAI/bge embeddings and FAISS ANN indexing. Sub-100ms query latency via FastAPI.',
-    stack: ['FAISS', 'BAAI/bge', 'PyTorch', 'FastAPI'],
+    title: 'Internal MCP Server',
+    desc: 'Standardized integration layer exposing multiple internal platforms, data sources, and tools as MCP tools — any LLM agent/host connects through one protocol instead of bespoke per-tool glue. Turned an M×N integration problem into M+N, with one point of change per backend.',
+    stack: ['MCP', 'Python', 'FastAPI', 'Tool Schemas'],
+  },
+  {
+    title: 'Skill Matching Engine — 1M+ Scale',
+    desc: 'High-throughput semantic matching over 1M+ candidate-JD pairs at 50K records/sec using GPU-accelerated sentence-transformer embeddings and FAISS ANN indexing — replaced manual skill mapping across enterprise clients.',
+    stack: ['FAISS', 'sentence-transformers', 'PyTorch', 'FastAPI'],
   },
   {
     title: 'RAG System — 10M+ Documents',
@@ -73,13 +76,13 @@ export default function About() {
                 I'm an <span className="accent">Agentic AI Engineer and SDE</span> with 2+ years building production LLM systems — not prototypes, not demos. Systems that process millions of records, answer queries in under 2 seconds, and run without human intervention.
               </p>
               <p>
-                My core expertise is <span style={{ color: '#e6edf3' }}>LangGraph agent orchestration</span>, <span style={{ color: '#e6edf3' }}>MCP chatbot development</span> (Claude MCP + MongoDB MCP), and <span style={{ color: '#e6edf3' }}>hybrid RAG pipelines</span> — Pinecone, Neo4j graph expansion, cross-encoder reranking. I've shipped autonomous browser agents, multi-turn conversational agents, and LoRA fine-tuned SLMs on cloud GPU.
+                My core expertise is <span style={{ color: '#e6edf3' }}>MCP-based conversational AI</span> (Claude MCP + MongoDB MCP), <span style={{ color: '#e6edf3' }}>hybrid RAG at scale</span> — BM25 + dense retrieval, cross-encoder reranking, grounded citations — and <span style={{ color: '#e6edf3' }}>multi-agent orchestration</span>. I've shipped enterprise chatbots, a 10M-document RAG platform, autonomous browser agents, and LoRA fine-tuned SLMs.
               </p>
               <p>
-                I work across the full AI stack: <span style={{ color: '#e6edf3' }}>LLM APIs</span> (GPT-4, Claude, Gemini, Amazon Bedrock, Azure AI Foundry, Vertex AI), <span style={{ color: '#e6edf3' }}>RAG & vector databases</span> (Pinecone, Qdrant, FAISS, Neo4j), <span style={{ color: '#e6edf3' }}>SLM fine-tuning</span> (LoRA/QLoRA, GGUF, llama.cpp), and <span style={{ color: '#e6edf3' }}>production infra</span> (Docker, CI/CD, FastAPI, Redis, GitLab).
+                I'm also the author of <span style={{ color: '#e6edf3' }}>open-source MCP tooling</span> — <span className="accent">grounded-rag-mcp</span>, published on both <span style={{ color: '#e6edf3' }}>PyPI and npm</span>: an MCP server for grounded, cited retrieval with hybrid search, reranking, and an eval harness, shipped in both Python and TypeScript.
               </p>
               <p>
-                Every system I build ships end to end — from architecture to deployment.
+                I work across the full AI stack: <span style={{ color: '#e6edf3' }}>LLM APIs</span> (GPT-4, Claude, Gemini, LLaMA, Amazon Bedrock, Vertex AI), <span style={{ color: '#e6edf3' }}>RAG & vector databases</span> (Pinecone, FAISS, Neo4j), <span style={{ color: '#e6edf3' }}>SLM fine-tuning</span> (LoRA/QLoRA, GGUF, llama.cpp), and <span style={{ color: '#e6edf3' }}>production infra</span> (Docker, CI/CD, FastAPI, Redis) on GCP and AWS. Every system ships end to end.
               </p>
             </div>
           </motion.div>

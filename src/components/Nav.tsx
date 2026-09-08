@@ -17,9 +17,9 @@ export default function Nav() {
     <nav
       style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        background: scrolled ? 'rgba(6,10,18,0.92)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(0,212,255,0.1)' : '1px solid transparent',
+        background: scrolled ? 'rgba(5,7,14,0.72)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(16px) saturate(140%)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(255,255,255,0.07)' : '1px solid transparent',
         transition: 'all 0.3s ease',
         padding: '0 5%',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
@@ -46,7 +46,7 @@ export default function Nav() {
           </Link>
         ))}
         <a
-          href="mailto:chetangowda1521@gmail.com"
+          href="mailto:chetan.vivamus@gmail.com"
           className="btn-primary"
           style={{ fontSize: '0.72rem', padding: '8px 20px' }}
         >
@@ -68,7 +68,7 @@ export default function Nav() {
       {menuOpen && (
         <div style={{
           position: 'absolute', top: '64px', left: 0, right: 0,
-          background: 'rgba(6,10,18,0.97)', backdropFilter: 'blur(12px)',
+          background: 'rgba(5,7,14,0.96)', backdropFilter: 'blur(16px)',
           borderBottom: '1px solid var(--border)',
           display: 'flex', flexDirection: 'column', gap: '1.5rem', padding: '2rem 5%',
         }}>
@@ -83,7 +83,7 @@ export default function Nav() {
               {l}
             </Link>
           ))}
-          <a href="mailto:chetangowda1521@gmail.com" className="btn-primary" style={{ textAlign: 'center' }}>
+          <a href="mailto:chetan.vivamus@gmail.com" className="btn-primary" style={{ textAlign: 'center' }}>
             HIRE ME →
           </a>
         </div>

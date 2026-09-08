@@ -2,21 +2,21 @@ import { motion } from 'framer-motion'
 
 const roles = [
   {
-    period: 'Jan 2025 – Present',
+    period: 'Jan 2026 – Present',
     title: 'Software Development Engineer',
-    company: 'Spire.AI, Bangalore',
+    company: 'Spire Technologies and Solutions, Bangalore',
     bullets: [
-      'Built LangGraph-based autonomous browser AI agent — zero human intervention, millions of records crawled per run',
-      'Designed MCP agentic chatbots (Claude MCP + MongoDB MCP) — ~60% latency reduction vs traditional middleware stacks',
-      'Engineered FAISS semantic skill matcher — 1M+ pairs at 50K rec/sec, days → minutes',
-      'Built RAG system over 10M+ documents — Pinecone + Neo4j + Redis, <2s end-to-end latency',
-      'Fine-tuned SLMs (Llama-3.2, Qwen2.5, Gemma-2) via LoRA/PEFT on Vertex AI GPU clusters',
+      'Built MCP-based multi-turn conversational agents (enterprise chatbots) — Claude MCP + MongoDB MCP, intent routing, entity extraction, tool orchestration grounded in live data; ~60% lower query-resolution latency',
+      'Designed an internal MCP server standardizing integration of multiple platforms & tools — turned an M×N integration problem into M+N, one point of change per backend',
+      'Architected a production RAG system over 10M+ documents — hybrid BM25 + dense retrieval, cross-encoder reranking, grounded citations; <2s latency (Pinecone + Neo4j + Redis)',
+      'Shipped a FAISS skill-matching engine — 1M+ candidate-JD pairs at 50K rec/sec; fine-tuned SLMs (Llama-3.2, Qwen2.5, Gemma-2) via LoRA on Vertex AI',
+      'Worked directly with enterprise clients including Genpact on product integration & migration — earned strong client feedback for smooth delivery',
     ],
   },
   {
-    period: 'May 2024 – Dec 2024',
+    period: 'May 2024 – Dec 2025',
     title: 'AI Analyst — Product Quality & Metrics',
-    company: 'Spire.AI, Bangalore',
+    company: 'Spire Technologies and Solutions, Bangalore',
     bullets: [
       'Built multi-agent AI Foundry pipelines on Vertex AI — ~70% reduction in manual taxonomy curation',
       'Fine-tuned NLP models (T5, DeBERTa, SciSpacy) — deployed to production HuggingFace endpoints',
@@ -26,7 +26,7 @@ const roles = [
   {
     period: 'Jan 2024 – May 2024',
     title: 'Independent Consultant — AI & Data',
-    company: 'Spire.AI, Bangalore',
+    company: 'Spire Technologies and Solutions, Bangalore',
     bullets: [
       'Built LLM skill gap pipelines with async ETL — 500K+ records to MongoDB',
       'Developed forecasting models (LSTM, SARIMA, Prophet, Chronos) feeding Power BI dashboards',

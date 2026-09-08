@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { lazy, Suspense, useEffect, useRef } from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,6 +8,8 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './index.css'
+
+const NeuralCore = lazy(() => import('./components/NeuralCore'))
 
 export default function App() {
   const cursorRef = useRef<HTMLDivElement>(null)
@@ -32,6 +34,9 @@ export default function App() {
     <>
       <div id="cursor" ref={cursorRef} />
       <div id="cursor-ring" ref={ringRef} />
+      <Suspense fallback={null}>
+        <NeuralCore />
+      </Suspense>
       <Nav />
       <main>
         <Hero />

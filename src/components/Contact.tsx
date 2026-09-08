@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, ExternalLink } from 'lucide-react'
 
 const cards = [
-  { icon: Mail, label: 'Email', value: 'chetangowda1521@gmail.com', href: 'mailto:chetangowda1521@gmail.com' },
-  { icon: ExternalLink, label: 'LinkedIn', value: 'linkedin.com/in/chetan-c-1ba71123b', href: 'https://linkedin.com/in/chetan-c-1ba71123b' },
+  { icon: Mail, label: 'Email', value: 'chetan.vivamus@gmail.com', href: 'mailto:chetan.vivamus@gmail.com' },
+  { icon: ExternalLink, label: 'LinkedIn', value: 'linkedin.com/in/chetan-c', href: 'https://linkedin.com/in/chetan-c-1ba71123b' },
   { icon: ExternalLink, label: 'GitHub', value: 'github.com/chetan1521', href: 'https://github.com/chetan1521' },
-  { icon: Phone, label: 'Phone', value: '+91 98869 98081', href: 'tel:+919886998081' },
+  { icon: Phone, label: 'Phone', value: '+91 79750 13485', href: 'tel:+917975013485' },
 ]
 
 export default function Contact() {

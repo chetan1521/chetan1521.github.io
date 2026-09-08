@@ -3,19 +3,19 @@ import { motion } from 'framer-motion'
 const groups = [
   {
     label: 'AI / LLM',
-    skills: ['LangGraph', 'Claude MCP', 'MongoDB MCP', 'Embedding Models', 'GPT-4', 'Gemini', 'Amazon Bedrock', 'Azure OpenAI', 'Agentic Workflows', 'Function Calling', 'Prompt Engineering', 'Model Finetuning'],
+    skills: ['Conversational AI / Chatbots', 'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Multi-Agent Systems', 'Function Calling', 'Tool Orchestration', 'Agentic Workflows', 'Prompt Engineering', 'GPT-4', 'Gemini', 'LLaMA', 'Amazon Bedrock'],
   },
   {
     label: 'ML / NLP',
-    skills: ['RAG Pipelines', 'FAISS', 'Qdrant', 'Pinecone', 'Neo4j Graph DB', 'HuggingFace', 'LoRA / QLoRA', 'PEFT', 'llama.cpp', 'GGUF', 'DeBERTa', 'SciSpacy', 'BAAI/bge', 'Dense Vector', 'Hybrid Query Model', 'BM25', 'Semantic Models'],
+    skills: ['RAG Pipelines', 'NLU', 'Dialogue Management', 'Intent Classification', 'Entity Extraction', 'Semantic Chunking', 'Hybrid Retrieval (BM25 + Dense)', 'Cross-Encoder Reranking', 'FAISS', 'Pinecone', 'Neo4j Graph DB', 'ANN Indexing', 'IBM Docling', 'HuggingFace', 'SLM Fine-tuning (LoRA · llama.cpp)'],
   },
   {
     label: 'Cloud & MLOps',
-    skills: ['GCP / Vertex AI', 'Azure', 'AWS Bedrock', 'Docker', 'FastAPI', 'Redis', 'Upstash', 'MongoDB Atlas', 'Weights & Biases', 'CI/CD', 'GitLab', 'Render', 'HF Spaces'],
+    skills: ['GCP (Vertex AI)', 'AWS (Bedrock)', 'FastAPI', 'Docker', 'Redis', 'CI/CD (GitHub Actions)', 'Structured Logging', 'Observability', 'Cloud-native Deployment'],
   },
   {
     label: 'Programming & Data',
-    skills: ['Python', 'TypeScript', 'SQL', 'Playwright', 'Selenium', 'MongoDB', 'ReactJS', 'Knowledge Graph', 'Power BI', 'Pydantic', 'structlog', 'Vector DB'],
+    skills: ['Python', 'TypeScript', 'Node.js', 'SQL', 'REST APIs', 'ReactJS', 'Streamlit', 'Playwright', 'Selenium', 'MongoDB', 'Elastic Search', 'Vector Databases', 'Power BI'],
   },
 ]
 
