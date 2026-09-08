@@ -67,12 +67,12 @@ export default function Projects() {
           style={{ padding: '2.4rem', marginBottom: '3.5rem' }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-              <Package size={22} color="var(--accent)" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', flexWrap: 'wrap', minWidth: 0 }}>
+              <Package size={22} color="var(--accent)" style={{ flexShrink: 0 }} />
               <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '1.5rem', color: '#e6edf3' }}>
                 {flagship.title}
               </h3>
-              <span className="tag" style={{ fontSize: '0.6rem', letterSpacing: '0.12em' }}>{flagship.badge}</span>
+              <span className="tag" style={{ fontSize: '0.6rem', letterSpacing: '0.12em', whiteSpace: 'normal' }}>{flagship.badge}</span>
             </div>
           </div>
 

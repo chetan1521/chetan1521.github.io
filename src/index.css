@@ -342,7 +342,13 @@ section { position: relative; z-index: 1; }
    Mobile hero fixes — stop the 500px flex-basis
    from forcing overflow on narrow screens
    ───────────────────────────────────────────── */
-* { overflow-wrap: break-word; }
+/* Let long prose wrap, but never break headings/numbers mid-word */
+p, li, .tag, .summary-text { overflow-wrap: break-word; }
+h1, h2, h3, .section-title, .name-accent, .hero-stats .accent {
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
+}
 
 @media (max-width: 760px) {
   .hero-copy {
@@ -361,9 +367,23 @@ section { position: relative; z-index: 1; }
     text-align: left !important;
     padding: 0.9rem 1rem !important;
   }
+  /* Name must never break mid-word: nowrap + a size that always fits */
   #hero h1,
   #hero .name-accent {
-    font-size: clamp(2.2rem, 12.5vw, 3.6rem) !important;
+    font-size: clamp(1.55rem, 9.2vw, 3.4rem) !important;
+    white-space: nowrap;
+  }
+  /* Stat values ("10M+") must stay on one line */
+  .hero-stats .accent {
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+  }
+  .hero-stats .card div:last-child {
+    font-size: 0.62rem !important;
+  }
+  /* Flagship card title on narrow screens */
+  .flagship-card h3 {
+    font-size: 1.15rem !important;
   }
   #hero .section-label {
     letter-spacing: 0.09em !important;
