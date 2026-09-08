@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const groups = [
   {
     label: 'AI / LLM',
-    skills: ['Conversational AI / Chatbots', 'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Multi-Agent Systems', 'Function Calling', 'Tool Orchestration', 'Agentic Workflows', 'Prompt Engineering', 'GPT-4', 'Gemini', 'LLaMA', 'Amazon Bedrock'],
+    skills: ['Conversational AI / Chatbots', 'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Harness Engineering (Agent + Eval)', 'Multi-Agent Systems', 'Function Calling', 'Tool Orchestration', 'Agentic Workflows', 'Prompt Engineering', 'GPT-4', 'Gemini', 'LLaMA', 'Amazon Bedrock'],
   },
   {
     label: 'ML / NLP',

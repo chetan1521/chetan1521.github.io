@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const chips = [
   // Orchestration & Agents
-  'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Multi-Agent Systems', 'Agentic Workflows', 'Function Calling', 'Tool Orchestration',
+  'Claude MCP', 'MongoDB MCP', 'MCP Server Development', 'Harness Engineering', 'Eval Harness', 'Multi-Agent Systems', 'Agentic Workflows', 'Function Calling', 'Tool Orchestration',
   // Chatbots & NLP
   'Conversational AI', 'Multi-turn Chatbots', 'NLU', 'Dialogue Management', 'Intent Routing', 'Entity Extraction',
   // LLMs & APIs
