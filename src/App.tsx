@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef } from 'react'
 import Nav from './components/Nav'
+import ScrollProgress from './components/ScrollProgress'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -37,6 +38,7 @@ export default function App() {
       <Suspense fallback={null}>
         <NeuralCore />
       </Suspense>
+      <ScrollProgress />
       <Nav />
       <main>
         <Hero />

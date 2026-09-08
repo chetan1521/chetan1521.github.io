@@ -117,7 +117,13 @@ export default function Projects() {
                 <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: '1rem', color: '#e6edf3' }}>
                   {p.title}
                 </h3>
-                <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-dim)' }}>
+                <a
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${p.title} on GitHub`}
+                  style={{ color: 'var(--text-dim)' }}
+                >
                   <ExternalLink size={16} />
                 </a>
               </div>

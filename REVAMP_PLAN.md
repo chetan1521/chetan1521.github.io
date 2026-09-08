@@ -10,7 +10,20 @@ Two pillars:
 1. **Truthful, current content** — matches the résumé exactly.
 2. **A "wow" moment** — a 3D object that assembles/dismantles as you scroll (the AI-relevant answer to the "car that dismantles" idea).
 
-## Phases (one by one)
+## Status: ✅ all phases complete (deployed 2026-09-09)
+
+| # | Phase | Done |
+|---|---|---|
+| 1 | Content refresh | ✅ résumé-aligned; packages flagship; Genpact + internal MCP; Azure dropped |
+| 2 | Design system | ✅ cyan→violet duotone, aurora bg, glass cards, gradient headings/buttons, pill tags |
+| 3 | 3D centerpiece | ✅ NeuralCore scroll morph (cloud → sphere → knot → dismantle), lazy-loaded |
+| 4 | Scroll choreography | ✅ existing in-view reveals + gradient scroll-progress bar |
+| 5 | Perf / a11y / mobile | ✅ code-split (115KB main), reduced-motion fallback verified, single h1, labelled icon links, zero horizontal overflow, SEO + OG meta |
+| 6 | Deploy | ✅ pushed to main → GitHub Actions → Pages |
+
+*Deferred (optional, not needed): a pinned scrollytelling segment — the 3D morph already carries the scroll narrative.*
+
+## Original phase detail
 
 | # | Phase | What | Risk |
 |---|---|---|---|

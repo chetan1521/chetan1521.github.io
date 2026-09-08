@@ -89,16 +89,27 @@ body::after {
 .accent { color: var(--accent); }
 .glow   { text-shadow: 0 0 20px rgba(34,211,238,0.5); }
 
+/* Screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Gradient treatment for large accent headings */
 .section-title .accent,
-#hero h1.accent {
+#hero .name-accent {
   background: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-#hero h1.accent {
+#hero .name-accent {
   filter: drop-shadow(0 0 28px rgba(34, 211, 238, 0.35));
 }
 
@@ -350,7 +361,8 @@ section { position: relative; z-index: 1; }
     text-align: left !important;
     padding: 0.9rem 1rem !important;
   }
-  #hero h1 {
+  #hero h1,
+  #hero .name-accent {
     font-size: clamp(2.2rem, 12.5vw, 3.6rem) !important;
   }
   #hero .section-label {

@@ -35,16 +35,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(3.5rem, 8vw, 6rem)', lineHeight: 1, color: '#e6edf3', marginBottom: '0.2rem' }}
           >
-            CHETAN
+            CHETAN<span className="sr-only"> C.</span>
           </motion.h1>
 
-          <motion.h1
+          {/* visual continuation of the h1 above — kept as a div so the page has a single h1 */}
+          <motion.div
+            aria-hidden
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-            className="accent glow"
+            className="name-accent"
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(3.5rem, 8vw, 6rem)', lineHeight: 1, marginBottom: '2rem' }}
           >
             C.
-          </motion.h1>
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
